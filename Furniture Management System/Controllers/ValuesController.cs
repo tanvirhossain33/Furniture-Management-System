@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Furniture_Management_System.Context;
+using Furniture_Management_System.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,11 +11,15 @@ namespace Furniture_Management_System.Controllers
 {
     public class ValuesController : ApiController
     {
-        // GET api/values
+
+        
+       // GET api/values
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
+
+
 
         // GET api/values/5
         public string Get(int id)
