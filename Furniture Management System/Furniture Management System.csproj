@@ -190,6 +190,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Context\ApplicationContext.cs" />
+    <Compile Include="Controllers\FurnituresController.cs" />
     <Compile Include="Controllers\FurnitureTypesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HomesController.cs" />
