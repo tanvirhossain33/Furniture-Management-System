@@ -10,7 +10,8 @@ namespace Furniture_Management_System
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
-
+            var cors = new EnableCorsAttribute("*", "*", "*");
+            config.EnableCors(cors);
             // Web API routes
             config.MapHttpAttributeRoutes();
 
