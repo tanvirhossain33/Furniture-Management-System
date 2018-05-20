@@ -18,7 +18,7 @@ angular.module('myApp.controllers', [])
 
       Home.get(function (response) {
           $scope.homes = response;
-      });;
+      });
 
   }])
   .controller('AddHomeCtrl', ['$scope', 'Home', function ($scope, Home) {
