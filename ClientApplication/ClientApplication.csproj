@@ -1,4 +1,5 @@
-﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -67,6 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="partials\addFurnitureType.html" />
+    <Content Include="partials\viewFurnitureType.html" />
     <Content Include="Scripts\vendor\angular\version.json" />
     <Content Include="Scripts\vendor\angular\errors.json" />
     <Content Include="Scripts\vendor\angular\angular.min.js.map" />
@@ -94,10 +97,6 @@
     <Content Include="partials\viewHome.html" />
     <Content Include="partials\addHome.html" />
     <Content Include="Scripts\app\app.js" />
-    <Content Include="Scripts\app\controllers.js" />
-    <Content Include="Scripts\app\directives.js" />
-    <Content Include="Scripts\app\filters.js" />
-    <Content Include="Scripts\app\services.js" />
     <Content Include="Scripts\vendor\angular\angular-animate.js" />
     <Content Include="Scripts\vendor\angular\angular-animate.min.js" />
     <Content Include="Scripts\vendor\angular\angular-aria.js" />

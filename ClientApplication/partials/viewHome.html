@@ -1,9 +1,14 @@
-<p>List of Homes</p>
+<h3>List of Homes</h3>
 
-<table>
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Phone</th>
+        <th>Address</th>
+    </tr>
     <tr ng-repeat="s in homes">
         <td>{{s.Id}}</td>
         <td>{{s.Phone}}</td>
-        <td>{{s.Address}}</td>        
+        <td>{{s.Address}}</td> 
     </tr>
 </table>

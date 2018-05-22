@@ -1,22 +1,48 @@
 ﻿<!DOCTYPE html>
 <html ng-app="myApp">
 <head>
-    <title></title>
-</head>
-<body>
-    <a href="#/viewHome">View List of Homes</a> || 
-    <a href="#/addHome">Add New Home</a>
-    
-    <div ng-view></div>
+
+    <!-- CSS (load bootstrap) -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <style>
+        .navbar {
+            border-radius: 0;
+        }
+    </style>
+
+    <!-- JS (load angular, ui-router, and our custom js file) -->
 
     <script src="Scripts/vendor/angular/angular.min.js"></script>
-    <script src="Scripts/vendor/angular/angular-route.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
     <script src="Scripts/vendor/angular/angular-resource.min.js"></script>
-
     <script src="Scripts/app/app.js"></script>
-    <script src="Scripts/app/controllers.js"></script>
-    <script src="Scripts/app/directives.js"></script>
-    <script src="Scripts/app/filters.js"></script>
-    <script src="Scripts/app/services.js"></script>
+    
+</head>
+
+<!-- apply our angular app to our site -->
+<body >
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" ui-sref="#">AngularUI Router</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a ui-sref="viewHome">View Home</a></li>
+            <li><a ui-sref="addHome">Add Home</a></li>
+
+            <li><a ui-sref="viewFurnitureType">View Furniture Type</a></li>
+            <li><a ui-sref="addFurnitureType">Add Furniture Type</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+
+        <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+        <div ui-view></div>
+
+    </div>
+
 </body>
 </html>
